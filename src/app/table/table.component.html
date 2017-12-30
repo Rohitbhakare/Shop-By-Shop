@@ -1,0 +1,41 @@
+<div class="row">
+  <h3>Tables</h3>
+  <ul class="list-inline ">
+    <li *ngFor="let table of productDetails" style="display: inline-block;" class="list-inline-item hvr-buzz-out">
+      <a href="#" style=" text-decoration: none" >
+        <div class="card" style="width: 250px;">
+          <img class="card-img-top" style="max-height: 200px;max-width: 200px;" src="{{ table.imagePath }}" alt="Card image">
+          <div class="card-body" >
+            <h4 class="card-title">{{ table.productName }}</h4>
+            <!--<div class="col-xl-12">
+            <p class="card-text">{{ table.property }}</p>
+            </div>-->
+            <h5 class="card-text">Price : {{ table.price }}</h5>
+            <!--<a href="#" class="btn btn-primary">See Profile</a>-->
+          </div>
+          <div class="card-footer" style="margin-left: 30px;">
+            
+            <!--<div class="dropdown" >
+            <button style="width: 240px" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Qwantity <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+            </ul>
+        </div>-->
+            <!--<a href="#" style="width: 140px" class="btn btn-primary">Add To Kart</a>-->
+          </div>
+
+        </div>
+      </a>
+      <button type="button" class="btn btn-primary" style="width: 240px">Add to Kart</button>
+    </li>
+  </ul>
+
+</div>
