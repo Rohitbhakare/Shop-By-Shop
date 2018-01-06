@@ -15,6 +15,7 @@ import { BedComponent } from './bed/bed.component';
 import { CupboardComponent } from './cupboard/cupboard.component';
 import { MatressComponent } from './matress/matress.component';
 import { PillowComponent } from './pillow/pillow.component';
+import { UserLoginComponent } from './user-login/user-login.component';
 
 const appRoutes: Routes=[
   { path: '' , component: TableComponent },
@@ -35,7 +36,8 @@ const appRoutes: Routes=[
     BedComponent,
     CupboardComponent,
     MatressComponent,
-    PillowComponent
+    PillowComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,
