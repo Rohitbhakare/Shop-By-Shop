@@ -37,16 +37,16 @@
 
     </div>-->
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
+    <!-- Modal for login -->
+    <div class="modal fade" id="logInModal" role="dialog">
       <div class="modal-dialog">
 
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
+          <!--<div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modal Header</h4>
-          </div>
+            <h4 class="modal-title">LogIn</h4>
+          </div>-->
           <div class="modal-body">
             <app-user-login> </app-user-login>
 
@@ -58,5 +58,57 @@
 
       </div>
     </div>
+    <!--Modal fo0r login ends-->
+    
+    <!-- Modal for Sign Up -->
+    <div class="modal fade" id="signUpModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <!--<div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Sign Up</h4>
+          </div>-->
+          <div class="modal-body">
+            <app-user-sign-up>  </app-user-sign-up>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--Modal fo0r sign Up ends-->
+
+
+
+    <!-- Modal for Forgot Password -->
+    <div class="modal fade" id="forgotPasswordModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <!--<div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Sign Up</h4>
+          </div>-->
+          <div class="modal-body">
+           <app-user-forgot-password> </app-user-forgot-password>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--Modal fo0r Forgot Password ends-->
+
+
+
   </div>
 </div>

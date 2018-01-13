@@ -6,7 +6,8 @@ import { productDataService } from '../product.service'
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
-  styleUrls: ['./table.component.css']
+  styleUrls: ['./table.component.css'],
+
 })
 
 export class TableComponent implements OnInit {
@@ -17,9 +18,9 @@ export class TableComponent implements OnInit {
   constructor(private productDataServices : productDataService) { }
 
   ngOnInit() {
-    console.log("Table init");  
+    console.log("Table init ");  
       this.productDetails = this.productDataServices.getProductData();
-     console.info(this.productDetails); 
+      console.info(this.productDetails); 
     //  for(let i = 0; i < this.productDetails.length ; i++){
     //   if('Table'=== this.productDetails[i].productName){
     //     this.tableModel.push(new tables(this.productDetails[i].productName,this.productDetails[i].description,this.productDetails[i].imagePath,this.productDetails[i].price)); 
