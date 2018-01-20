@@ -4,8 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 
-import { productDataService } from './product.service'
+import { productDataService } from './product.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -18,6 +19,9 @@ import { PillowComponent } from './pillow/pillow.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserSignUpComponent } from './user-sign-up/user-sign-up.component';
 import { UserForgotPasswordComponent } from './user-forgot-password/user-forgot-password.component';
+import { HorizontalSliderModule } from "./../components/horizontal-slider/horizontal-slider.module";
+import {BusyModule} from 'angular2-busy';
+
 
 const appRoutes: Routes=[
   { path: '' , component: TableComponent },
@@ -45,9 +49,12 @@ const appRoutes: Routes=[
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    NoopAnimationsModule,
     FormsModule,
     HttpModule,
-    HttpClientModule,
+    HorizontalSliderModule,
+    BusyModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [productDataService],

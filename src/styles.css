@@ -9,3 +9,12 @@ transition: 1s ease;
 transform: scale(1.2);
 transition: 1s ease;
 }
+
+.primary-color{
+    color: #E18A07;
+}
+
+.primary-background-color{
+   background-color: #E18A07;
+}
+
